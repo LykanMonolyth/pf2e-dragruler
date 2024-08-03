@@ -1,0 +1,79 @@
+{
+  "title": "PF2e Drag Ruler Integration",
+  "version": "3.1.0",
+  "description": "Integration of Drag Ruler module (https://github.com/manuelVo/foundryvtt-drag-ruler) for Pathfinder 2e.",
+  "compatibility": {
+    "minimum": "12",
+    "maximum": "12"
+  },
+  "authors": [
+    {
+      "name": "Reyzor",
+      "discord": "reyzor1991"
+    },
+    {
+      "name": "Avery",
+      "discord": "celtois"
+    },
+	{
+		"name": "Monolyth",
+		"discord": "Monolyth"
+	}
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "caption": "PF2E Drag Ruler",
+      "thumbnail": "modules/pf2e-dragruler/thumbnail.webp"
+    }
+  ],
+  "packs": [
+    {
+      "name": "movement-types",
+      "label": "Movement Types",
+      "path": "packs/movement-types.db",
+      "type": "Item",
+      "private": false,
+      "system": "pf2e",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "js/main.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "cn",
+      "name": "简体中文",
+      "path": "lang/cn.json",
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "manifest": "https://github.com/reyzor1991/pf2edragruler/releases/latest/download/module.json",
+  "download": "https://github.com/reyzor1991/pf2edragruler/releases/latest/download/pf2edragruler.zip",
+  "url": "https://github.com/reyzor1991/pf2edragruler",
+  "id": "pf2e-dragruler",
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "drag-ruler",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/develop/module.json"
+      }
+    ]
+  }
+}
